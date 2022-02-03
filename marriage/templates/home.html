@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navi{
+            background-color: rgba(101, 231, 15, 0.877);
+            height: 25px;
+            padding: 0;
+            
+        }
+        .img{
+            width: 1518px;
+            height: 600px;
+            margin: 0;       
+         }
+        footer{
+            margin: 0;
+            padding: 5px;
+            background-color: rgba(252, 255, 71, 0.938);
+            height: 70px;
+        }
+        .fh{
+            text-align: center;
+            text-transform: capitalize;
+            line-height: 25px;
+            font-size: 35px;
+            
+        }
+        .gm{
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navi">
+        <a href="/home"><b> ABOUT US</b></a>
+        <a href="/gallery"><b>GALLERY</b></a>
+        <a href="/contact"><b>CONTACT US</b></a>
+        <a href="/profile"><b>PROFILE</b></a>
+        <a href="/logout"><b>LOGOUT</b></a>
+
+    </nav>
+    
+    <img class="img" src="{% static 'img1.jpg' %}" alt="img loading">
+    <footer>
+        <h2 class="fh"> Auther : Piyush Niranjan</h2><b>Gmail :</b>
+        <a class="gm" href="mailto:piyushniranjan416@gmail.com"> <b>piyushniranjan416@gmail.com</b></a>
+        
+    </footer>
+    
+</body>
+
+</html>
